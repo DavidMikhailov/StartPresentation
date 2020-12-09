@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,87 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIPageViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3w-pY-hL1">
+                                <rect key="frame" x="75" y="402" width="264" height="92"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37897392478767122" green="0.87838478714383561" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z3w-pY-hL1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XSq-Zm-Jqs"/>
+                            <constraint firstItem="Z3w-pY-hL1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eV8-jx-XRn"/>
+                            <constraint firstItem="Z3w-pY-hL1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="358" id="lzx-61-hJ1"/>
+                            <constraint firstItem="Z3w-pY-hL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="p7X-h2-hvj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="ks5-Y8-XkT">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="HxV-A4-TJv" customClass="PageViewController" customModule="UIPageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Vg-o6-o3l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="114"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="hYH-7D-sk5">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" id="y1t-T4-8Pk" customClass="ContentViewController" customModule="UIPageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p6k-NW-kUT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🖐🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaN-qQ-KT8">
+                                <rect key="frame" x="153" y="393" width="108" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Много, много текста" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HD6-MY-zaA">
+                                <rect key="frame" x="20" y="134" width="374" height="30.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="IrP-QL-C0h">
+                                <rect key="frame" x="187.5" y="825" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37897392479999997" green="0.87838478710000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MaN-qQ-KT8" firstAttribute="centerX" secondItem="bhN-gJ-znQ" secondAttribute="centerX" id="7je-8F-4ey"/>
+                            <constraint firstItem="HD6-MY-zaA" firstAttribute="leading" secondItem="p6k-NW-kUT" secondAttribute="leadingMargin" id="IEt-sd-gJR"/>
+                            <constraint firstItem="HD6-MY-zaA" firstAttribute="centerX" secondItem="MaN-qQ-KT8" secondAttribute="centerX" id="fUs-bl-10l"/>
+                            <constraint firstItem="IrP-QL-C0h" firstAttribute="centerX" secondItem="bhN-gJ-znQ" secondAttribute="centerX" id="hea-aT-THo"/>
+                            <constraint firstItem="bhN-gJ-znQ" firstAttribute="bottom" secondItem="IrP-QL-C0h" secondAttribute="bottom" id="sUv-ZX-yvh"/>
+                            <constraint firstItem="HD6-MY-zaA" firstAttribute="top" secondItem="bhN-gJ-znQ" secondAttribute="top" constant="90" id="xQk-y1-4lZ"/>
+                            <constraint firstItem="MaN-qQ-KT8" firstAttribute="centerY" secondItem="bhN-gJ-znQ" secondAttribute="centerY" id="yaj-JF-MZr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bhN-gJ-znQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="emojoLabel" destination="MaN-qQ-KT8" id="twV-vL-VeZ"/>
+                        <outlet property="pageControl" destination="IrP-QL-C0h" id="46v-j5-HhW"/>
+                        <outlet property="presentTextLabel" destination="HD6-MY-zaA" id="Vok-ea-5fu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ig-fM-awp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.6376811594205" y="113.83928571428571"/>
         </scene>
     </scenes>
 </document>
